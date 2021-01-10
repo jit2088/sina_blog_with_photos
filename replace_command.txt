@@ -1,0 +1,37 @@
+grep -E -o "http://s\d+\.sinaimg\.cn\/mw690" Post_1_4f25f1a10102zir0_我的2020年.html
+
+sed 's/http:\/\/s\\d\+\.sinaimg\.cn\/mw690/testing/g'  Post_1_4f25f1a10102zir0_我的2020年.html 
+
+sed -i '.html'  's/http:\/\/s[1-9][0-9]\.sinaimg\.cn\/mw690/testing/g' test2020.html
+
+sed -i '.html'  's/http:\/\/s[1-9]\.sinaimg\.cn\/mw690/testing/g' test2020.html
+
+sed -i '.html' 's/amp;690/amp;690\.jpg/g' test2020.html
+
+
+//
+
+sed -i '.html'  's/http:\/\/s\d{1,2}\.sinaimg\.cn\/mw690/testing/g' testing3.html
+
+sed -i '.html'  's/testing/\/Users\/JinTang\/Desktop\/sina_images/g' test2020.html
+
+
+pattern: http:\/\/s\d{1,2}\.sinaimg\.cn\/mw690/
+
+/Users/JinTang/Desktop/sina_blog/sina_images
+相对路径 ： ./sina_image
+
+sed -i '.html'  's/testing/\.\/sina_images/g' test3.html
+
+/Users/JinTang/desktop/sina_blog/sina_images
+
+
+patter matched:
+************************************
+
+改变路径： 	sed -i '.html'  's/http:\/\/s[0-9]\{1,2\}\.sinaimg\.cn\/mw690/\.\/sina_images/g' test4.html
+添加jpg后缀： sed -i '.html' 's/amp;690/amp;690\.jpg/g' test2020.html
+
+
+第二个pattern
+http://s4.sinaimg.cn/bmiddle/001rRG0hzy7D8cWJ8qfb3&amp;690.jpg
