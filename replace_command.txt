@@ -38,3 +38,4 @@ http://s4.sinaimg.cn/bmiddle/001rRG0hzy7D8cWJ8qfb3&amp;690.jpg
 pattern: http:\/\/s[0-9]{1,2}\.sinaimg\.cn\/bmiddle
 
 sed -i '.html'  's/http:\/\/s[0-9]\{1,2\}\.sinaimg\.cn\/bmiddle/\.\/sina_images/g' test5.html
+sed -i '.html'  's/http:\/\/s[0-9]\{1,2\}\.sinaimg\.cn\/small/\.\/sina_images/g' *.html
